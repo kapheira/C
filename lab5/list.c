@@ -21,14 +21,14 @@ void writed_list(person *list){
     }
     printf("\n------------------------------------\n");
 }
-void add_tail(person **list,int data){
+void add_tail(person **list,int a){
 
     person *temp = *list;
     while(temp->next != NULL){
         temp = temp->next;
     }
     person *tail= (person*)malloc(sizeof(person));
-    tail->data = data;
+    tail->data = a;
     tail->next =NULL;
     temp->next = tail;
 
@@ -45,13 +45,9 @@ int main(){
     add_head(&prs,2);
     add_head(&prs,6);
     add_tail(&prs,8);
-    writed_list(prs);
+                writed_list(prs);
 
 
-
-
-
-
-
+    
     return 0;
 }
