@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 #include<stdlib.h>
 
 
@@ -45,7 +46,7 @@ int main(){
     add_head(&prs,2);
     add_head(&prs,6);
     add_tail(&prs,8);
-                writed_list(prs);
+    writed_list(prs);
 
 
     
